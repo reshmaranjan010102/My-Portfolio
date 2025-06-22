@@ -32,3 +32,4 @@ git clone https://github.com/reshmaranjan010102/My-Portfolio.git
 cd My-Portfolio
 npm install
 npm run dev
+
