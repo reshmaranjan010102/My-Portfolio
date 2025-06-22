@@ -35,7 +35,7 @@ export default function AboutMe() {
                                 transition={{ duration: 0.5, delay: 0.2 }}
                                 viewport={{ amount: 0.3 }}
                             >
-                                I'm{" "}
+                                I&apos;m{" "}
                                 <span className="font-semibold text-blue-600">
                                     Reshma Ranjan
                                 </span>{" "}
@@ -49,11 +49,11 @@ export default function AboutMe() {
                                     </a>
                                 </span>{" "}
                                 , Begusarai, where I honed my technical skills and developed a
-                                keen interest in software development. I've had the opportunity
+                                keen interest in software development. I&apos;ve had the opportunity
                                 to apply my knowledge in real-world scenarios through
                                 internships and professional roles, gaining valuable experience
                                 in web infrastructure, cloud deployments, and full-stack
-                                development. I'm always eager to learn new technologies and
+                                development. I&apos;m always eager to learn new technologies and
                                 contribute to innovative projects.
                             </motion.p>
                         </div>

@@ -27,7 +27,7 @@ export default function AboutMe() {
 
   return (
     <>
-      <div className="after-header">
+      <div className="after-header bg-white">
         <div className="w-full bg-gradient-to-br from-black to-blue-600 p-4 pt-6">
           <div className="border-3 border-dashed p-4 md:px-20 xl:px-40 border-white rounded-md relative flex flex-col items-center">
             <div className="relative -top-[34px] flex flex-col items-center">

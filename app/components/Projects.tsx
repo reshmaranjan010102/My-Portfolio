@@ -103,7 +103,7 @@ export default function Projects() {
     },
   ];
   return (
-    <div id="projects">
+    <div id="projects bg-white">
       <div className="px-40 flex flex-1 justify-center py-20 w-screen overflow-hidden">
         <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
           <motion.h2

@@ -138,7 +138,7 @@ export default function Contact() {
                             viewport={{ amount: 0.3 }}
                             className="text-[#677a83] text-sm font-normal leading-normal"
                         >
-                            I'm always open to discussing new projects, creative ideas, or
+                            I&apos;m always open to discussing new projects, creative ideas, or
                             just a friendly chat. Feel free to reach out through the form
                             below or connect with me on social media.
                         </motion.p>
