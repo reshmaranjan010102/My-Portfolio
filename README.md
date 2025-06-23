@@ -1,6 +1,6 @@
 # 💼 My Portfolio
 Welcome to my personal developer portfolio! This repository showcases my skills, projects, and passion for building modern web applications.
-<img alt="Coding" height="450" src="./public/images/Screenshot 2025-06-22 162018.png" />
+<img alt="Coding" height="430" src="./public/images/Screenshot 2025-06-22 162018.png" />
 
 ---
 
