@@ -5,7 +5,7 @@ import Timeline from "./Timeline";
 export default function AboutMe() {
     return (
         <>
-            <div className="after-header w-full bg-white">
+            <div className="after-header w-full">
                 <div className="xl:px-40 md:px-20 px-4 xl:py-20 md:py-14 py-10">
                     <div className="flex md:flex-row flex-col xl:gap-10 md:gap-6 gap-3 justify-center items-center">
                         <div>

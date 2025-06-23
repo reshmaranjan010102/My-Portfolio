@@ -1,9 +1,16 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Button3 from "./Button3";
 
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+    });
+    
     return (
         <div className="xl:px-40 md:px-20 px-4 py-20 bg-white">
             <div className="flex md:flex-row flex-col xl:gap-10 md:gap-6 gap-3 items-center justify-center">
@@ -148,30 +155,34 @@ export default function Contact() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                             viewport={{ amount: 0.3 }}
-                            readOnly
                             placeholder="Enter your name"
+                            value={formData.name}
+                            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                            required
                             className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#121517] focus:outline-0 focus:ring-0 border border-[#dde2e4] bg-white focus:border-[#dde2e4] h-14 placeholder:text-[#677a83] p-[8px] text-base font-normal leading-normal"
-                            value=""
                         />
                         <motion.input
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                             viewport={{ amount: 0.3 }}
-                            readOnly
+                            value={formData.email}
+                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                            required
                             placeholder="Enter your email"
                             className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#121517] focus:outline-0 focus:ring-0 border border-[#dde2e4] bg-white focus:border-[#dde2e4] h-14 placeholder:text-[#677a83] p-[8px] text-base font-normal leading-normal"
-                            value=""
+
                         />
                         <motion.input
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                             viewport={{ amount: 0.3 }}
-                            readOnly
+                            value={formData.phone}
+                            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                            required
                             placeholder="Enter your phone number (optional)"
                             className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#121517] focus:outline-0 focus:ring-0 border border-[#dde2e4] bg-white focus:border-[#dde2e4] h-14 placeholder:text-[#677a83] p-[8px] text-base font-normal leading-normal"
-                            value=""
                         />
                         <motion.textarea
                             initial={{ opacity: 0, y: 30 }}
@@ -179,6 +190,9 @@ export default function Contact() {
                             transition={{ duration: 0.5, delay: 0.2 }}
                             viewport={{ amount: 0.3 }}
                             placeholder="Your message"
+                            value={formData.message}
+                            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                            required
                             className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#121517] focus:outline-0 focus:ring-0 border border-[#dde2e4] bg-white focus:border-[#dde2e4] min-h-36 placeholder:text-[#677a83] p-[8px] text-base font-normal leading-normal"
                         ></motion.textarea>
                         <motion.div

@@ -55,12 +55,16 @@ export default function Header() {
           </div>
           <ul className="flex gap-2 justify-between items-center md:mr-4 mr-0">
             <li className="relative group cursor-pointer">
-              <div className="flex gap-2 text-sm md:text-base text-blue-600 md:px-4 px-2 py-2 md:mx-2 mx-1">
+              <a
+                href="/files/Reshma Ranjan Resume.pdf"
+                download="Reshma_Ranjan_Resume.pdf" className="flex gap-2 text-sm md:text-base text-blue-600 md:px-4 px-2 py-2 md:mx-2 mx-1">
                 <FaDownload /> Resume
-              </div>
-              <div className="flex gap-2 text-sm md:text-base absolute -top-16 group-hover:-top-2 transition-all duration-500 ease-in-out font-bold text-white shadow-xl rounded-b-md md:px-4 px-2 py-3 md:mx-2 mx-1 bg-white bg-gradient-to-br from-black to-blue-600">
+              </a>
+              <a
+                href="/files/Reshma Ranjan Resume.pdf"
+                download="Reshma_Ranjan_Resume.pdf" className="flex gap-2 text-sm md:text-base absolute -top-16 group-hover:-top-2 transition-all duration-500 ease-in-out font-bold text-white shadow-xl rounded-b-md md:px-4 px-2 py-3 md:mx-2 mx-1 bg-white bg-gradient-to-br from-black to-blue-600">
                 <FaDownload /> Resume
-              </div>
+              </a>
             </li>
             <li>
               <Button3 href="https://github.com/reshmaranjan010102">
